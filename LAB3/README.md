@@ -1,78 +1,16 @@
 # Система Аэропорт (Airport System)
 
 **Сводка по проекту:**  
-- Всего классов: **55**  
+- Всего классов: **50**  
 - Всего полей (атрибутов классов с аннотациями типов): **154**  
-- Всего уникальных поведений (методов классов): **124**  
-- Всего примеров ассоциаций между классами (поля/параметры/типы результата с другими классами): **53**  
+- Всего уникальных поведений (методов классов): **104**  
+- Всего примеров ассоциаций между классами (поля/параметры/типы результата с другими классами): **33**  
 - Всего персональных пользовательских исключений (наследников `AirportError`): **12**  
 
-Учебный проект на Python, демонстрирующий принципы **SOLID** и **GRASP** на предметной области аэропорта.
-
-- Язык: Python 3.10+
-- Зависимости: только стандартная библиотека Python
-- Архитектура: модульная — слои `domain`, `services`, `repositories`, `exceptions`, `utils`
 
 Проект моделирует: пассажиров, персонал, самолёты, рейсы, терминалы и гейты, билеты и бронирования, платежи и транзакции, безопасность, багаж и расписание.
 
-## Структура проекта
 
-```text
-airport_system_project/
-  README.md
-  airport_system/
-    __init__.py
-    config.py
-    main.py
-    domain/
-      __init__.py
-      enums.py
-      passenger.py
-      employee.py
-      aircraft.py
-      terminal.py
-      ticket.py
-      flight.py
-      booking.py
-      payment.py
-      security.py
-      baggage.py
-      schedule.py
-      statistics.py
-    exceptions/
-      __init__.py
-      base.py
-      booking_exceptions.py
-      payment_exceptions.py
-      security_exceptions.py
-      baggage_exceptions.py
-      flight_exceptions.py
-    repositories/
-      __init__.py
-      base.py
-      booking_repository.py
-      flight_repository.py
-    services/
-      __init__.py
-      booking_service.py
-      payment_service.py
-      baggage_service.py
-      security_service.py
-      flight_service.py
-    utils/
-      __init__.py
-      time_utils.py
-      validation.py
-      id_generator.py
-  tests/
-    __init__.py
-    test_booking_service.py
-    test_payment_service.py
-    test_baggage_service.py
-    test_security_service.py
-    test_flight_service.py
-    test_domain_models.py
-```
 
 ## Конфигурация и точка входа
 
